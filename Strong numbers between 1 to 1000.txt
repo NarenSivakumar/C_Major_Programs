@@ -1,0 +1,41 @@
+//Strong numbers between 1 to 1000
+#include<stdio.h>
+int fact(int num)
+{
+	int i;
+	int fact = 1;
+
+	for ( i= 1; i<= num ; i++)
+	{
+		fact = fact *i;
+	}
+	return fact;
+}
+int strong(int n)
+{
+	int temp;
+	int digit,sum=0;
+		
+	temp = n;
+	while (temp > 0)
+	{
+		digit = temp % 10;
+ 		sum = sum + fact(digit);
+		temp = temp/10; 
+	}
+	return sum == n;
+}
+int main()
+{
+	int i;
+	printf("strong numbers 1 to 1000:\n");
+	for (i = 1; i<1000; i++)
+	{
+		if(strong(i))
+		{
+			printf("%d\n",i);
+	}
+}
+printf("\n");
+}
+		

@@ -1,0 +1,23 @@
+//float binary char pointer
+#include<stdio.h>
+
+void floatbinary(int);
+
+int main()
+{
+	float n;
+	printf("Enter the float number\n");
+	scanf("%f",n);
+	floatbinary(n);
+	}
+void floatbinary(float n)
+{
+	int i,j;
+	char *p = (char*)&n;
+	for(i = 3; i >=0; i--){
+		for(j = 7; j>= 0; j--){
+			printf("%d\n",(p[i]>>j)&1));
+	}
+		}
+	printf("\n");
+}

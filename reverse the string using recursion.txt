@@ -1,0 +1,30 @@
+//reverse the string using recursion
+#include<stdio.h>
+#include<string.h>
+
+void reverse(char[], int , int);
+
+int main()
+{
+	char str[100];
+	
+	printf("Enter the string\n");
+	scanf("%s",str);
+	int length = strlen(str);
+	reverse(str,0,length-1);
+	printf("reversed string is:%s",str);	
+}
+void reverse (char str[], int start, int end)
+{
+	if(start >= end)
+	{
+return;
+}
+	else {
+	char temp = str[start];
+	str[start] = str[end];
+	str[end] = temp;
+
+	return reverse(str,start+1,end-1);
+}
+}

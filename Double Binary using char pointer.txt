@@ -1,0 +1,27 @@
+//Double Binary using char pointer
+void doublebinary(double);
+
+int main()
+{
+	double n;
+	printf("Enter the double value\n");
+	scanf("%lf",&n);
+	printf("Double binary representation:\n");
+	doublebinary(n);
+}
+
+void doublebinary(double n)
+{
+	int i,j;
+	char *p = (char *)&n;
+	
+	for(i = 7; i >= 0; i--){
+		for ( j = 7; j>=0; j--){
+			printf("%d",(p[i]>>j)&1);
+	}
+
+}
+	printf("\n");
+}
+0100000000101000000000000000000000000000000000000000000000000000
+0100000000101000000000000000000000000000000000000000000000000000

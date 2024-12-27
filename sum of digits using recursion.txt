@@ -1,0 +1,23 @@
+//sum of digits using recursion
+#include<stdio.h>
+int sumofdigit(int,int);
+
+int main()
+{
+	int num;
+	printf("Enter the two digit number\n");
+	scanf("%d",&num);
+	int result = sumofdigit(num);
+	printf("sum of digit :%d\n",result);	
+	}
+int sumofdigit(int num)
+{
+	if(num ==0)
+	{
+	return 0;
+}
+	else{
+	// MISTAKE I DID --> return sumofdigit((num%10) + (num/10));
+	//Corrected:
+	return (num%10) + sumofdigit(num/10);
+}

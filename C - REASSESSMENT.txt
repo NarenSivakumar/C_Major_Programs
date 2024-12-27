@@ -1,0 +1,49 @@
+C - REASSESSMENT
+
+/*prime number 1 to 1000--
+remove consecutive spaces
+sll middle and delete all node
+sum of digits recursion*--
+file change all character*/
+
+/*strcmp
+float binary using char pointer--
+insert the data in array--
+mv command in files--
+sll add-end, print, rev_print, save
+prime number 1 to 1000--*/
+
+/*strncat 
+sll add_end, rev_print, print.
+atoi command
+cp command--
+strong number 1 to 1000--
+insert the element in an array--
+*/
+
+/* strong numbers 1 to 1000--
+strncmp
+reverse the string using recursion--
+mv cmd--
+allocate memory for 2D array using DMA
+sll add_begin, print node, rev_print, save the node
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Strncpy
+Non repeted elements in array
+Sll-addbegin print save rev print
+Mv in files
+Double binary
+Store 5 strings using DMA*/

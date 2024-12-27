@@ -1,0 +1,33 @@
+//move command using files concept
+#include<stdio.h>
+int main()
+{
+	FILE *fs = fopen("data.txt","r");
+	if(fs == NULL){
+	printf("File doesn't exist\n");
+	return 0;
+	}
+	FILE *fd = fopen("new.txt","w");
+	char ch;
+while((ch = fgetc(fs)) != EOF)
+	{
+		fputc(ch, fd);
+	}
+	printf("File successfully moved\n");
+	remove("data.txt");
+	}
+
+//copy command using files concept
+same as this move command just add extra:
+if(fs != NULL)
+{
+	while((ch = fgetc(fs)) != EOF)
+	{
+		fputc(ch,fd);
+	}
+	printf("file is successfully copied!\n");
+}
+else
+{
+	printf("No source file\n");
+}

@@ -1,0 +1,32 @@
+//Remove All and consecutive spaces in a string
+
+#include<stdio.h>
+#include<string.h>
+
+void removespace(char *);
+int main()
+{
+ 	char str[100];
+	
+
+	printf("Enter the string\n");
+	scanf("%[^\n]",str);
+	
+	removespace(str);
+	printf("Modified string : %s",str);
+}
+
+void removespace(char *str)
+{
+	int i,j=0;
+	int length = strlen(str);	
+	for(i = 0 ; i < length; i ++)
+	{
+		if(str[i] != ' ') //for consecutive spaces 
+	//if(str[i] != ' ' || (i > 0 && str[i -1] != ' '))
+		{
+			str[j++] = str[i];
+		}
+	}
+str[j] = '/0';
+} 

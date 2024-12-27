@@ -1,0 +1,56 @@
+//Repeated Elements in an array
+#include<stdio.h>
+int main()
+{
+	int i,j,n,c;
+	printf("Enter the number of elements\n");
+	scanf("%d",&n);
+	
+	printf("Enter the %d elements",n);
+	for(i = 0; i < n; i ++)
+	{
+		printf("Elements %d",n);
+		scanf("%d",&a[i]);
+	}
+	
+	printf("repeated elements in the array are:\n");
+	for(i = 0; i < n ; i++)
+	{
+	c = 1; //initialize count value for each element
+	for (j = 0 ; j < i; j++)
+	{
+		if(a[i] == a[j])
+		{
+
+		c++;
+		}
+	}
+	if(c>1)
+{
+	printf("%d repeated %d:\n",a[i],c);
+}
+}
+printf("\n");
+return 0;
+}
+
+//for non-repeated elements 
+printf("Non-repeated elements are \n");
+for(i = 0 ; i < n; i++)
+{
+c =1; 
+for ( j = 0; j < i ; j++)
+{
+if( i != j && a[i] == a[j])
+{
+c++; break;
+}
+}
+	if(c ==1){
+	printf("%d",a[i]);
+}
+}
+printf("\n");
+return 0;
+}
+
